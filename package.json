@@ -1,0 +1,9 @@
+{
+  "name": "flitchat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static clone of flitchat.site",
+  "scripts": {
+    "start": "npx --yes serve -l 3000"
+  }
+}
