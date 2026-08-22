@@ -1,7 +1,7 @@
 {
-  "name": "FlitChat Site",
-  "short_name": "FlitChat",
-  "description": "FlitChat App — Get paid to chat with foreigners. Install the FlitChat Site App for fast access.",
+  "name": "Ajaytraders",
+  "short_name": "Ajaytraders",
+  "description": "Ajaytraders — Get paid to chat with foreigners. Install the Ajaytraders App for fast access.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
