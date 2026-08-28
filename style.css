@@ -1,0 +1,109 @@
+:root {
+  --color-background: #0f0f0f;
+  --color-foreground: #ffffff;
+  --color-text: #ffffff;
+  --color-muted: #bdbdbd;
+  --color-muted-foreground: #bdbdbd;
+  --color-border: rgba(0, 230, 118, 0.22);
+  --color-card: #171717;
+  --color-primary: #00e676;
+  --color-primary-dark: #00c853;
+  --color-coral: #ff1744;
+  --color-hero: #00e676;
+  --color-success: #00e676;
+}
+
+html,
+body,
+.bg-background {
+  background-color: #0f0f0f !important;
+  color: #fff;
+}
+
+.text-text,
+.text-foreground {
+  color: #fff !important;
+}
+
+.text-muted,
+.text-muted-foreground {
+  color: #bdbdbd !important;
+}
+
+.border-border {
+  border-color: rgba(0, 230, 118, 0.22) !important;
+}
+
+.bg-white,
+.bg-white\/85,
+.bg-white\/70,
+.bg-card {
+  background-color: #171717 !important;
+}
+
+.bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+header.sticky {
+  background-color: rgba(15, 15, 15, 0.88) !important;
+  border-bottom-color: rgba(0, 230, 118, 0.22) !important;
+}
+
+.bg-coral {
+  background-color: #ff1744 !important;
+  box-shadow: 0 0 12px #ff1744;
+}
+
+.bg-primary {
+  background-color: #00e676 !important;
+  color: #0f0f0f !important;
+}
+
+.text-primary {
+  color: #00e676 !important;
+}
+
+.font-display.text-text,
+h2.font-display,
+h1.font-display {
+  color: #00e676;
+  text-shadow: 0 0 10px rgba(0, 230, 118, 0.45);
+}
+
+footer {
+  background-color: #171717 !important;
+  border-top-color: rgba(0, 230, 118, 0.22) !important;
+}
+
+.download-app {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 60;
+  background: #2979ff;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: inherit;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 10px #2979ff;
+}
+
+.download-app.is-hidden {
+  display: none;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .download-app {
+    animation: none;
+  }
+}
