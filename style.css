@@ -50,6 +50,16 @@ header.sticky {
   border-bottom-color: rgba(0, 230, 118, 0.22) !important;
 }
 
+header img[alt="Ajaytraders logo"] {
+  object-fit: cover;
+  background: #000;
+}
+
+header a img[alt="Ajaytraders logo"] {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
 .bg-coral {
   background-color: #ff1744 !important;
   box-shadow: 0 0 12px #ff1744;

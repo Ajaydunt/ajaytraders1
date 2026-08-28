@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ajaytraders-cache-v4';
+const CACHE_NAME = 'ajaytraders-cache-v5';
 const PRECACHE = [
   '/',
   '/index.html',
@@ -10,6 +10,8 @@ const PRECACHE = [
   '/favicon-512.png',
   '/favicon-512-maskable.png',
   '/apple-touch-icon.png',
+  '/denichat-logo.webp',
+  '/assets/denichat-logo-CnMczFfq.webp',
 ];
 
 self.addEventListener('install', function (event) {
