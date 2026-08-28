@@ -1,13 +1,15 @@
-const CACHE_NAME = 'ajaytraders-cache-v3';
+const CACHE_NAME = 'ajaytraders-cache-v4';
 const PRECACHE = [
   '/',
   '/index.html',
   '/style.css',
   '/script.js',
-  '/manifest.webmanifest',
+  '/manifest.json',
   '/favicon.ico',
   '/favicon-192.png',
   '/favicon-512.png',
+  '/favicon-512-maskable.png',
+  '/apple-touch-icon.png',
 ];
 
 self.addEventListener('install', function (event) {

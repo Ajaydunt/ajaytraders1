@@ -1,13 +1,20 @@
+// Register service worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js');
+  navigator.serviceWorker.register('/sw.js?v=4')
+    .then(() => console.log('SW registered'))
+    .catch((err) => console.error('SW failed:', err));
 }
 
 let deferredPrompt;
+
+// Listen for install prompt event
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
+  console.log('Install prompt captured');
 });
 
+// Handle Download App button click
 document.getElementById('installApp').addEventListener('click', (e) => {
   e.preventDefault();
   if (deferredPrompt) {
@@ -21,7 +28,8 @@ document.getElementById('installApp').addEventListener('click', (e) => {
       deferredPrompt = null;
     });
   } else {
-    alert('Install prompt not available yet. Try refreshing.');
+    // Mobile fallback
+    alert('App install not ready yet. Try refreshing.');
   }
 });
 
